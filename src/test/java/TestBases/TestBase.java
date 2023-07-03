@@ -1,5 +1,6 @@
 package TestBases;
 
+import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -19,7 +20,7 @@ import java.util.HashMap;
 import java.util.concurrent.TimeUnit;
 
 
-public class TestBase {
+public class TestBase extends AbstractTestNGCucumberTests {
     public static WebDriver driver;
     public static String downloadPath = System.getProperty("user.dir") + "\\Downloads";
 
@@ -71,10 +72,10 @@ public class TestBase {
         driver.manage().timeouts().implicitlyWait(200, TimeUnit.SECONDS);
         driver.get("https://www.jumia.com/");
 
-        //to ignore the popup at Home Page
-        Actions action = new Actions(driver);
-        action.moveByOffset(0, 0).click().build().perform();
-        driver.manage().timeouts().implicitlyWait(200, TimeUnit.SECONDS);
+        //to Close the popup at Home Page
+//        Actions action = new Actions(driver);
+//        action.moveByOffset(0, 0).click().build().perform();
+//        driver.manage().timeouts().implicitlyWait(200, TimeUnit.SECONDS);
 
     }
 

@@ -58,8 +58,8 @@ public class AddProducttoCart extends TestBase {
         Thread.sleep(2000);
 
         CrtPage.openCartPage();
-        Assert.assertTrue(CrtPage.RemoveItm1Btn.isDisplayed());
-        Assert.assertTrue(CrtPage.RemoveItm2Btn.isDisplayed());
+        Assert.assertTrue(CrtPage.RemoveItem1Btn.isDisplayed());
+        Assert.assertTrue(CrtPage.RemoveItem2Btn.isDisplayed());
         String ViewSubtotal = CrtPage.SubTotal.getText();
         Assert.assertTrue(ViewSubtotal.contains("EGP 272.40"));
         System.out.println("The subtotal for the added Items is : " + ViewSubtotal);

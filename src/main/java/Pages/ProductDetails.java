@@ -17,11 +17,13 @@ public class ProductDetails extends BasePage{
     @FindBy(xpath = "//*[@id=\"jm\"]/main/div[1]/section/div/div[2]/div[1]/div/h1")
     public WebElement Item1Name;
 
-    @FindBy(xpath = "/html/body/div/main/div[2]/div[3]/section/div[1]/article[2]/a/div[2]/h3")
+    @FindBy(xpath = "/html/body/div/main/div[2]/div[3]/section/div[1]/article[2]/a/div[1]/img[1]")
     public WebElement Item2;
+
     @FindBy(xpath = "//*[@id=\"jm\"]/main/div[1]/section/div/div[2]/div[1]/div/h1")
     public WebElement Item2Name;
-    //*[@id="jm"]/main/div[2]/div[3]/section/div[1]/article[2]/a/div[1]/img
+//    /html/body/div[1]/main/div[1]/section/div/div[2]/div[1]/div/h1
+
     @FindBy(xpath = "/html/body/div/main/div[1]/section/div/div[2]/div[3]/div/form/button/span")
     WebElement AddtoCartBtn;
 
